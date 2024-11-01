@@ -1,0 +1,10 @@
+/* Enter your custom styles here */
+
+.sapMWizard[data-disablementData="true"] .sapMWizardProgressNavStep:nth-of-type(2) .sapMWizardProgressNavStepTitle{
+    text-decoration: line-through;
+}
+.sapMWizard[data-disablementData="true"] .sapMWizardProgressNavStep:nth-of-type(2) .sapMWizardProgressNavStepCircle{
+    text-decoration: line-through;
+    background-color: #ddd;
+    color: white;
+}

@@ -1,0 +1,29 @@
+<mvc:View controllerName="com.tts.wizardstepenablement.controller.wizard"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content>
+            <Wizard id="theDynamicWizard">
+                <customData>
+                    <core:CustomData key="disablementData" value="{= ${ui>/disableSecondStep}.toString() }" writeToDom="true" />
+                </customData>
+                <steps>
+                    <WizardStep id="firstStep" title="First Step Title">
+                        <VBox id="containerID">
+                            <Label text="Disable the second step" id="firstStepLabel"></Label>
+                            <Switch id="secondStepDisabler" state="{ui>/disableSecondStep}" />
+                        </VBox>
+                    </WizardStep>
+                    <WizardStep id="secondStep" title="Second Step Title">
+                        
+                        <Text id="textID2" text="Second Step" />
+                    </WizardStep>
+                    <WizardStep id="thirdStep" title="Third Step">
+                        <Text id="textID3" text="Third Step" />
+                    </WizardStep>
+                </steps>
+            </Wizard>
+
+        </content>
+    </Page>
+</mvc:View>
