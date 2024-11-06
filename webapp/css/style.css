@@ -1,5 +1,14 @@
 /* Enter your custom styles here */
 
+.sapMWizard[data-disablementData="true"] .sapMWizardProgressNavStep:nth-of-type(2) {
+    pointer-events: none;
+}
+
+.sapMWizard[data-disablementData="true"] .sapMWizardProgressNavStep:nth-of-type(2) .sapMWizardProgressNavStepContainer {
+    cursor: default;
+    pointer-events: none;
+}
+
 .sapMWizard[data-disablementData="true"] .sapMWizardProgressNavStep:nth-of-type(2) .sapMWizardProgressNavStepTitle{
     text-decoration: line-through;
 }
